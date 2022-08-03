@@ -18,7 +18,7 @@ upper case first letter - export
 no private scope
 */
 
-func main() {
+func StrConv() {
 	var i int = 34
 	fmt.Printf("%v, %T\n", i, i)
 

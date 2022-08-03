@@ -5,16 +5,16 @@ import (
 )
 
 var (
-	movieName string = "Stalker"
-	director string = "Tarkofsky"
-	movieNumber int = 3
-	released int = 1976 
+	movieName   string = "Stalker"
+	director    string = "Tarkofsky"
+	movieNumber int    = 3
+	released    int    = 1976
 )
 
 var (
 	counter int = 0
 )
 
-func main() {
+func Vars() {
 	fmt.Printf("%s, %T", movieName, released)
 }

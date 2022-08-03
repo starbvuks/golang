@@ -1,9 +1,10 @@
 package main
+
 import (
 	"fmt"
 )
 
-finc main() {
+func Primitive() {
 	var n bool = false
-	fmt.Printf("%v, %T")
+	fmt.Printf("%v", n)
 }
