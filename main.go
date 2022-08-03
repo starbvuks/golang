@@ -28,4 +28,7 @@ func main() {
 
 	Loops()
 	fmt.Printf("\n")
+
+	Mapping()
+	fmt.Printf("\n")
 }
