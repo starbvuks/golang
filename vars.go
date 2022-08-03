@@ -16,5 +16,5 @@ var (
 )
 
 func Vars() {
-	fmt.Printf("%s, %T", movieName, released)
+	fmt.Printf("%s, %T\n", movieName, released)
 }
