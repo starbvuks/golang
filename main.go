@@ -25,4 +25,7 @@ func main() {
 
 	Conditionals()
 	fmt.Printf("\n")
+
+	Loops()
+	fmt.Printf("\n")
 }
