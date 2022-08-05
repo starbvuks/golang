@@ -8,7 +8,7 @@ import (
 // Cipher interface encrypts and decrypts a string
 type Cipher interface {
 	Encryption(string) string
-	// dec(string) string
+	Decryption(string) string
 }
 
 // holds cipher key for enc and dec
@@ -43,6 +43,10 @@ func (c cipherKey) Encryption(plainText string) string {
 	return c.cipherAlg(plainText, func(a, b int) int { return a + b })
 }
 
+func (c cipherKey) Decryption(plainText string) string {
+	return c.cipherAlg(plainText, func(a, b int) int { return a - b })
+}
+
 func NewCaesar(key int) Cipher {
 	return NewShift(key)
 }
@@ -57,7 +61,10 @@ func NewShift(shift int) Cipher {
 }
 
 func main() {
-	c := NewCaesar(1)
-	test := c.Encryption("joe mama")
+	c := NewCaesar(2)
+	test := c.Encryption("sarvag")
 	fmt.Println(test)
+
+	huh := c.Decryption("uctxci")
+	fmt.Println(huh)
 }
